@@ -21,7 +21,7 @@
     "autod": "autod",
     "lint": "tslint --project . -c tslint.json",
     "clean": "ets clean",
-    "build": "npm run tsc && egg-scripts start --daemon --workers=1 --title=egg-server-insight"
+    "build": "node index.js"
   },
   "dependencies": {
     "@forsigner/egg-typeorm": "^1.3.2",
