@@ -21,7 +21,8 @@
     "autod": "autod",
     "lint": "tslint --project . -c tslint.json",
     "clean": "ets clean",
-    "build": "node index.js"
+    "test": "node index",
+    "build": "npm run tsc && egg-scripts start --daemon --workers=1 --title=egg-server-insight"
   },
   "dependencies": {
     "@forsigner/egg-typeorm": "^1.3.2",
@@ -37,7 +38,6 @@
     "mysql2": "^2.0.2",
     "node-schedule": "^1.3.2",
     "reflect-metadata": "^0.1.13",
-    "shelljs": "^0.8.5",
     "typeorm": "^0.2.18"
   },
   "devDependencies": {
